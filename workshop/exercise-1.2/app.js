@@ -21,3 +21,30 @@
 // Stretch goal
 // Make the countdown live (show a countdown that updates several times a
 // second)
+
+
+let time = document.getElementById("time");
+let result = document.getElementById("result");
+let body = document.querySelector("body");
+let victory = false;
+
+let timeAmount = Math.random() * 2 + 3;
+time.innerText = timeAmount;
+
+function clickEvent(){
+    victory = true;
+    body.removeEventListener("click", clickEvent);
+}
+
+body.addEventListener("click", clickEvent);
+
+setTimeout(function(){
+    if (victory === true){
+        result.innerText = "You've won!!!";
+        body.removeEventListener("click", clickEvent);
+    } else {
+        result.innerText="You were too slow...";
+        body.removeEventListener("click", clickEvent);
+    }
+}, timeAmount * 1000);
+

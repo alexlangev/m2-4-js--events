@@ -11,3 +11,9 @@
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
 // --------------------------------------------------
+
+document.getElementById("main").addEventListener("click", function () {
+    document.getElementById("text").innerText = "Bravo!!!"
+});
+
+

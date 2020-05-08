@@ -13,3 +13,23 @@
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
 // --------------------------------------------------
+let body = document.querySelector("body");
+let result = document.getElementById("result");
+let victory = false;
+
+function clickEvent(){
+    victory = true;
+    body.removeEventListener("click", clickEvent);
+}
+
+body.addEventListener("click", clickEvent);
+
+setTimeout(function (){
+    if (victory === true) {
+        result.innerText = "You've won!!!";
+        body.removeEventListener("click", clickEvent);
+    } else {
+        result.innerText = "Too slow...";
+        body.removeEventListener("click", clickEvent);
+    }
+}, 1000)

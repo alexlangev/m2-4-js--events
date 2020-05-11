@@ -10,7 +10,7 @@ Now that you know events, you can make it much better for the user.
 
 ### The Task
 
-Create a page that
+Create a page that 
 
 1. contains 3 sections (one for each of the following)
 2. displays the current time

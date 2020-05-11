@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+}
+
+.clickMe {
+    position: relative;
+    font-size: large;
+    background-color: lightblue;
+    height: 40px;
+    width:120px;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+}
+
+#start {
+    border-radius: 50%;
+    font-size: xx-large;
+    height: 20vh;
+    width: 30vw;
+}

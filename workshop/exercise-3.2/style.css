@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+
+button {
+    font-size: xx-large;
+    width: 20%;
+    height: 25vh;
+    background-color: green;
+}
+
+.pressed {
+    background-color: red;
+}
+
+#theLandOfButtons {
+    display: flex;
+    flex-wrap: wrap;
+}

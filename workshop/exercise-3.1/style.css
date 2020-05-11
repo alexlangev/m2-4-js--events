@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+}
+
+button {
+    background-color: red;
+    width: 20%;
+    height:25vh;
+}
+
+.pressed {
+    background-color: darkgreen;
+}
+
+#buttonLand {
+    display: flex;
+    flex-wrap: wrap;
+}

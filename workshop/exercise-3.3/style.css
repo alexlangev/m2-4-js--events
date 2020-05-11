@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+button {
+    background-color: darkred;
+    font-size: x-large;
+    position: relative;
+}
+
+.pressed {
+    background-color: darkgreen;
+}
